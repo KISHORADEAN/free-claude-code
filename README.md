@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 Free Claude Code
+# 🤖 ni Free Claude Code
 
 Use Claude Code, Codex, Pi, editor extensions, or chat bots through your own provider-backed proxy.
 
