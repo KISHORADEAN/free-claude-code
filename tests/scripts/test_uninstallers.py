@@ -127,6 +127,9 @@ fi
 exec /bin/rm "$@"
 """,
     )
+    # Keep the process guard hermetic: installer tests may be running
+    # fcc-* --version at the same time under xdist, which pgrep -f would match.
+    _write_executable(bin_dir / "pgrep", "#!/bin/sh\nexit 1\n")
 
     env = os.environ.copy()
     env.update(
