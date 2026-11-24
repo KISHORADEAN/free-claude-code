@@ -420,6 +420,17 @@ Windows PowerShell:
 & ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/uninstall.ps1")))
 ```
 
+## Development
+
+Run the test suite from a checkout with Python 3.14 managed by uv:
+
+```bash
+uv sync --frozen
+uv run pytest -q
+```
+
+Expected on a clean macOS checkout: `2181 passed, 38 skipped`.
+
 ## Project Links
 
 - [Report bugs or request features](https://github.com/Alishahryar1/free-claude-code/issues)
